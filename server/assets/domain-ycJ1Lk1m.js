@@ -1,0 +1,128 @@
+import { T as jsxRuntimeExports } from "./worker-entry-C2PHGdVa.js";
+import { P as PageShell, a as PageHeader } from "./PageShell-B_D83Rgg.js";
+import { c as createLucideIcon } from "./Footer-CGNgaJPJ.js";
+import { T as Target, B as Bug, L as Leaf, M as Map, W as Warehouse, C as Cpu } from "./warehouse-9lNk-eea.js";
+import "node:events";
+import "node:async_hooks";
+import "node:stream/web";
+import "node:stream";
+import "./router-TJ1S60ot.js";
+const __iconNode$3 = [
+  ["path", { d: "M12 7v14", key: "1akyts" }],
+  [
+    "path",
+    {
+      d: "M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z",
+      key: "ruj8y"
+    }
+  ]
+];
+const BookOpen = createLucideIcon("book-open", __iconNode$3);
+const __iconNode$2 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
+];
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$2);
+const __iconNode$1 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
+  ["path", { d: "M12 17h.01", key: "p32p05" }]
+];
+const CircleQuestionMark = createLucideIcon("circle-question-mark", __iconNode$1);
+const __iconNode = [
+  ["rect", { width: "8", height: "8", x: "3", y: "3", rx: "2", key: "by2w9f" }],
+  ["path", { d: "M7 11v4a2 2 0 0 0 2 2h4", key: "xkn7yn" }],
+  ["rect", { width: "8", height: "8", x: "13", y: "13", rx: "2", key: "1cgmvn" }]
+];
+const Workflow = createLucideIcon("workflow", __iconNode);
+const sections = [{
+  icon: BookOpen,
+  title: "Literature Survey",
+  body: "Recent agriculture-AI tools — including Plantix, CropIn and FarmBeats — have shown the value of computer vision and IoT in farming. However, most existing systems address a single problem (e.g. disease identification or irrigation), are designed for cash crops in temperate regions, and rarely consider the socio-economic context of smallholder paddy farmers in South Asia. They also depend on stable internet connectivity, which limits adoption in rural Sri Lanka."
+}, {
+  icon: CircleAlert,
+  title: "Research Gap",
+  body: "No existing platform supports the full paddy cultivation lifecycle in an integrated manner. Current tools handle isolated stages — pest detection or yield estimation — without coordinating decisions across planning, growth, harvest and sale. There is also a gap in lightweight, offline-capable models tuned to Sri Lankan paddy varieties and climate zones."
+}, {
+  icon: CircleQuestionMark,
+  title: "Research Problem",
+  body: "Sri Lankan paddy farmers face low yields, recurring pest outbreaks, poor pre-season planning and significant post-harvest losses (estimated at 15–25%). These issues are amplified by climate variability and limited access to expert agronomic advice — leading to reduced income and food security risks."
+}];
+const objectives = ["Improve pest prediction with pest detection using ensemble ML models trained on local outbreak and weather data", "Detect weeds accurately on-device, even offline", "Optimize crop planning using ML + geospatial intelligence", "Reduce post-harvest losses through storage & market timing advisory"];
+const methodology = [{
+  icon: Bug,
+  title: "Pest Prediction with pest manage",
+  model: "Random Forest + XGBoost + YOLO",
+  desc: "Combines historical outbreak data, weather forecasts and crop stage to predict pest pressure 12 days ahead."
+}, {
+  icon: Leaf,
+  title: "Weed Detection",
+  model: "MobileNetV2 (TFLite)",
+  desc: "Compact CNN trained on annotated paddy field images; runs offline on smartphones for instant herbicide recommendations."
+}, {
+  icon: Map,
+  title: "Crop Planning",
+  model: "ML + Geospatial",
+  desc: "Uses satellite NDVI, soil profiles, rainfall patterns and farmer goals to recommend variety, sowing date and zone allocation."
+}, {
+  icon: Warehouse,
+  title: "Post-Harvest Advisory",
+  model: "XGBoost + LSTM",
+  desc: "Forecasts price movement, optimal storage duration and best-time-to-sell to maximise net profit."
+}];
+const tech = ["Python", "Flask", "TensorFlow Lite", "React Native", "Random Forest", "XGBoost", "LSTM", "MobileNetV2", "PostgreSQL", "Geospatial APIs"];
+function DomainPage() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(PageShell, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(PageHeader, { eyebrow: "Research Domain", title: "The science behind AgroMind", description: "A deep dive into the literature, problem space, objectives, methodology and technologies that shape this research project." }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6", children: sections.map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-2xl p-8 hover-lift animate-fade-up md:[&:nth-child(3)]:col-span-2", style: {
+      animationDelay: `${i * 80}ms`
+    }, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(s.icon, { className: "w-6 h-6 text-primary" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-2xl font-bold mb-3", children: s.title }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed", children: s.body })
+    ] }, s.title)) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-gradient-section border-y border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8 animate-fade-up", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-7 h-7 text-primary" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl font-bold", children: "Research Objectives" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid sm:grid-cols-2 gap-4", children: objectives.map((o, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-4 p-6 bg-card border border-border rounded-xl hover-lift animate-fade-up", style: {
+        animationDelay: `${i * 60}ms`
+      }, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 rounded-lg bg-gradient-hero text-primary-foreground flex items-center justify-center font-bold text-sm shrink-0", children: i + 1 }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-foreground font-medium", children: o })
+      ] }, o)) })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8 animate-fade-up", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Workflow, { className: "w-7 h-7 text-primary" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl font-bold", children: "Methodology — Four Modules" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid md:grid-cols-2 gap-6", children: methodology.map((m, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-7 rounded-2xl border border-border bg-gradient-card hover-lift animate-fade-up", style: {
+        animationDelay: `${i * 80}ms`
+      }, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-4 mb-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(m.icon, { className: "w-6 h-6 text-primary" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-bold text-lg", children: m.title }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-primary uppercase tracking-wider mt-0.5", children: m.model })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: m.desc })
+      ] }, m.title)) })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 bg-gradient-section border-t border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-8 animate-fade-up", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Cpu, { className: "w-7 h-7 text-primary" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl font-bold", children: "Technologies Used" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-3", children: tech.map((t, i) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "px-5 py-2.5 rounded-full bg-card border border-border text-sm font-medium hover:border-primary hover:text-primary transition-smooth animate-fade-up", style: {
+        animationDelay: `${i * 40}ms`
+      }, children: t }, t)) })
+    ] }) })
+  ] });
+}
+export {
+  DomainPage as component
+};
